@@ -1,0 +1,35 @@
+{
+  "name": "react-buildless-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "snowpack": "snowpack --clean",
+    "postinstall": "npm run snowpack",
+    "start": "serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "snowpack": "^1.2.0"
+  },
+  "browserslist": ">0.75%, not ie 11, not op_mini all",
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "es-react": "^16.12.0",
+    "htm": "^3.0.3",
+    "serve": "^11.3.0"
+  }
+}
